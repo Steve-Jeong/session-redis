@@ -53,6 +53,22 @@ const PORT = 3001
 app.listen(PORT, console.log(`server is listening on port http://localhost:${PORT}`))
 ```
 
+<br><br>    
+# 유투브 #3
+https://www.youtube.com/watch?v=mzG3tpZmRUE&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2&ab_channel=productioncoder
 
+```javascript
+// session에 기록
+  req.session.clientId = 'abc123'
+  req.session.myNum = 5
 
+// session을 확인
+  if(!req.session || !req.session.clientId) {
+    const err = new Error('You are not logged in')
+    err.statusCode = 401
+    next(err)
+  }
 
+// session을 출력
+  res.json(req.session)
+```

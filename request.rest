@@ -1,0 +1,7 @@
+### login and register session id.
+POST http://localhost:3001/login
+
+
+### get profile after login, otherwise banned
+GET http://localhost:3001/profile
+
