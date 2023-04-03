@@ -80,3 +80,9 @@ https://www.youtube.com/watch?v=AlE021bw3Fc&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2m
 <br><br>    
 # 유투브 #5 - refactoring codebase
 https://www.youtube.com/watch?v=qzKRzwZzc6o&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2&ab_channel=productioncoder
+
+
+<br><br>    
+# 유투브 #6 - password hashing with bcrypt
+https://www.youtube.com/watch?v=i6190xVJMh8&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2&ab_channel=productioncoder
+
