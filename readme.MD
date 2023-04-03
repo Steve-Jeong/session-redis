@@ -7,7 +7,7 @@ docker run --name session-redis -p 6379:6379 -d redis
 redis-session컨테이너에 진입   
 docker exec -it session-redis redis-cli
 <br><br>    
-# 유투브 #2
+# 유투브 #2 - 골격 구성
 https://www.youtube.com/watch?v=n4ClLTXXZsE&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2&ab_channel=productioncoder
 
 ## 프로젝트 초기화   
@@ -54,7 +54,7 @@ app.listen(PORT, console.log(`server is listening on port http://localhost:${POR
 ```
 
 <br><br>    
-# 유투브 #3
+# 유투브 #3 - apply express-session
 https://www.youtube.com/watch?v=mzG3tpZmRUE&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2&ab_channel=productioncoder
 
 ```javascript
@@ -72,3 +72,11 @@ https://www.youtube.com/watch?v=mzG3tpZmRUE&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2m
 // session을 출력
   res.json(req.session)
 ```
+
+<br><br>    
+# 유투브 #4 - refactoring routes
+https://www.youtube.com/watch?v=AlE021bw3Fc&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2&ab_channel=productioncoder
+
+<br><br>    
+# 유투브 #5 - refactoring codebase
+https://www.youtube.com/watch?v=qzKRzwZzc6o&list=PL1Nml43UBm6fPP7cW9pAFTdZ_9QX2mBn2&ab_channel=productioncoder
