@@ -1,5 +1,11 @@
 ### login and register session id.
 POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+  "email": "user1@productioncoder.com",
+  "password": "user1pw"
+}
 
 
 ### get profile after login, otherwise banned

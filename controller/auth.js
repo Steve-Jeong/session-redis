@@ -1,4 +1,6 @@
-function login(req, res) {
+const authService = require('../service/auth')
+
+async function login(req, res) {
   const { email, password } = req.body
 
   // perform payload validation
@@ -9,13 +11,14 @@ function login(req, res) {
   }
 
   // check if the credentials are correct
-  // ...
-
-  // if that credentials are correct
-  req.session.clientId = 'abc123'
-  req.session.myNum = 5
-
-  res.json('you are now logged in')
+  try {
+    const user = await authService.login(email, password)
+    req.session.user = user
+    res.status(204).json(user)
+  } catch(err) {
+    console.error(err)
+    res.status(401).json(err)
+  }
 }
 
 module.exports = {
